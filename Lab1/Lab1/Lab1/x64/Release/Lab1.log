@@ -1,0 +1,18 @@
+﻿  Lab1.cpp
+  DebugCallback.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\Lab1.cpp(3,10): error C1083:  Cannot open include file: 'GL/glew.h': No such file or directory
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glut.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\DebugCallback.h(4,10): error C1083:  Cannot open include file: 'GL/glew.h': No such file or directory
+  imgui_widgets.cpp
+  InitShader.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\imgui_impl_glut.cpp(10,10): error C1083:  Cannot open include file: 'GL/glew.h': No such file or directory
+  LoadMesh.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\InitShader.cpp(1,10): error C1083:  Cannot open include file: 'GL/glew.h': No such file or directory
+  LoadTexture.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\LoadMesh.h(7,10): error C1083:  Cannot open include file: 'GL/glew.h': No such file or directory
+  VideoMux.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\LoadTexture.h(5,10): error C1083:  Cannot open include file: 'GL/glew.h': No such file or directory
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Lab1\VideoMux.h(8,10): error C1083:  Cannot open include file: 'libavutil/avassert.h': No such file or directory

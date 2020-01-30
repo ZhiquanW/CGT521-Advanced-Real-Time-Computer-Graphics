@@ -1,0 +1,26 @@
+﻿  Lab1.cpp
+  DebugCallback.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glut.cpp
+  imgui_widgets.cpp
+  InitShader.cpp
+  LoadMesh.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\LoadMesh.cpp(178,34): warning C4018:  '<': signed/unsigned mismatch
+  LoadTexture.cpp
+  VideoMux.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\LoadMesh.cpp(287,22): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(187,34): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(189,52): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(233,7): warning C4244:  'argument': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(264,38): warning C4244:  '=': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(288,1): warning C4996:  'avcodec_encode_audio2': was declared deprecated
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\include\libavcodec\avcodec.h(5283): message :  see declaration of 'avcodec_encode_audio2'
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(389,7): warning C4244:  'argument': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(412,41): warning C4244:  'argument': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(438,1): warning C4996:  'avcodec_encode_video2': was declared deprecated
+  Generating Code...
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\include\libavcodec\avcodec.h(5322): message :  see declaration of 'avcodec_encode_video2'
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Template\VideoMux.cpp(532): warning C4700:  uninitialized local variable 'audio_codec' used
+  Template.vcxproj -> C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Lab1\Lab1\Debug\Template.exe
