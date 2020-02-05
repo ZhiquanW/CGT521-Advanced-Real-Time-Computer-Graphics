@@ -1,0 +1,137 @@
+﻿  imgui.cpp
+521Template.obj : error LNK2019: unresolved external symbol __imp_glewInit referenced in function "void __cdecl initOpenGl(void)" (?initOpenGl@@YAXXZ)
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowPosition referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutDestroyWindow referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "void __cdecl idle(void)" (?idle@@YAXXZ)
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutSwapBuffers referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutIdleFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutSpecialFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutMouseFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutMotionFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutPassiveMotionFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardUpFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutSpecialUpFunc referenced in function main
+521Template.obj : error LNK2019: unresolved external symbol __imp_glutGet referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp_glutGet
+521Template.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+521Template.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewDeleteProgram
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewDeleteProgram
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+521Template.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+imgui_impl_glut.obj : error LNK2019: unresolved external symbol __imp_glutSetCursor referenced in function "void __cdecl ImGui_ImplGlut_NewFrame(void)" (?ImGui_ImplGlut_NewFrame@@YAXXZ)
+imgui_impl_glut.obj : error LNK2019: unresolved external symbol __imp_glutGetModifiers referenced in function "void __cdecl ImGui_ImplGlut_KeyCallback(unsigned int)" (?ImGui_ImplGlut_KeyCallback@@YAXI@Z)
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewBlendEquation
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewDeleteBuffers
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewDeleteBuffers
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewAttachShader
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewAttachShader
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewBlendEquationSeparate
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewDeleteShader
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewDetachShader
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewGetAttribLocation
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewDeleteVertexArrays
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewDeleteVertexArrays
+imgui_impl_glut.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramInfoLog
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramiv
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfoLog
+InitShader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
+LoadMesh.obj : error LNK2019: unresolved external symbol "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ) referenced in function "void __cdecl `dynamic initializer for 'gImporter''(void)" (??__EgImporter@@YAXXZ)
+LoadMesh.obj : error LNK2019: unresolved external symbol "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ) referenced in function "void __cdecl `dynamic atexit destructor for 'gImporter''(void)" (??__FgImporter@@YAXXZ)
+LoadMesh.obj : error LNK2019: unresolved external symbol "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z) referenced in function "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z)
+LoadMesh.obj : error LNK2019: unresolved external symbol "public: char const * __cdecl Assimp::Importer::GetErrorString(void)const " (?GetErrorString@Importer@Assimp@@QEBAPEBDXZ) referenced in function "struct MeshData __cdecl LoadMesh(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?LoadMesh@@YA?AUMeshData@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewBufferSubData
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewBindAttribLocation
+LoadMesh.obj : error LNK2001: unresolved external symbol __imp___glewDrawElementsBaseVertex
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_Unload referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_Load referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_GetFileType referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_GetWidth referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_GetHeight referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_GetPitch referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_ConvertTo32Bits referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+LoadTexture.obj : error LNK2019: unresolved external symbol __imp_FreeImage_ConvertToRawBits referenced in function "unsigned int __cdecl LoadTexture(char const *)" (?LoadTexture@@YAIPEBD@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_strerror referenced in function av_make_error_string
+VideoMux.obj : error LNK2019: unresolved external symbol av_rescale_rnd referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_rescale_q referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_compare_ts referenced in function "void __cdecl encode_frame(unsigned char *)" (?encode_frame@@YAXPEAE@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_log referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_get_channel_layout_nb_channels referenced in function "void __cdecl add_stream(struct OutputStream *,struct AVFormatContext *,struct AVCodec * *,enum AVCodecID,int,int)" (?add_stream@@YAXPEAUOutputStream@@PEAUAVFormatContext@@PEAPEAUAVCodec@@W4AVCodecID@@HH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_dict_copy referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_dict_free referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_opt_set_int referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_opt_set_sample_fmt referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_frame_alloc referenced in function "struct AVFrame * __cdecl alloc_audio_frame(enum AVSampleFormat,unsigned __int64,int,int)" (?alloc_audio_frame@@YAPEAUAVFrame@@W4AVSampleFormat@@_KHH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_frame_free referenced in function "void __cdecl close_stream(struct AVFormatContext *,struct OutputStream *)" (?close_stream@@YAXPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_frame_get_buffer referenced in function "struct AVFrame * __cdecl alloc_audio_frame(enum AVSampleFormat,unsigned __int64,int,int)" (?alloc_audio_frame@@YAPEAUAVFrame@@W4AVSampleFormat@@_KHH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_frame_make_writable referenced in function "struct AVFrame * __cdecl get_video_frame(struct OutputStream *)" (?get_video_frame@@YAPEAUAVFrame@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_alloc_context3 referenced in function "void __cdecl add_stream(struct OutputStream *,struct AVFormatContext *,struct AVCodec * *,enum AVCodecID,int,int)" (?add_stream@@YAXPEAUOutputStream@@PEAUAVFormatContext@@PEAPEAUAVCodec@@W4AVCodecID@@HH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_free_context referenced in function "void __cdecl close_stream(struct AVFormatContext *,struct OutputStream *)" (?close_stream@@YAXPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_parameters_from_context referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_open2 referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_init_packet referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_packet_rescale_ts referenced in function "int __cdecl write_frame(struct AVFormatContext *,struct AVRational const *,struct AVStream *,struct AVPacket *)" (?write_frame@@YAHPEAUAVFormatContext@@PEBUAVRational@@PEAUAVStream@@PEAUAVPacket@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_find_encoder referenced in function "void __cdecl add_stream(struct OutputStream *,struct AVFormatContext *,struct AVCodec * *,enum AVCodecID,int,int)" (?add_stream@@YAXPEAUOutputStream@@PEAUAVFormatContext@@PEAPEAUAVCodec@@W4AVCodecID@@HH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_encode_audio2 referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_encode_video2 referenced in function "int __cdecl write_video_frame(struct AVFormatContext *,struct OutputStream *)" (?write_video_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avcodec_get_name referenced in function "void __cdecl add_stream(struct OutputStream *,struct AVFormatContext *,struct AVCodec * *,enum AVCodecID,int,int)" (?add_stream@@YAXPEAUOutputStream@@PEAUAVFormatContext@@PEAPEAUAVCodec@@W4AVCodecID@@HH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avio_open referenced in function "int __cdecl main_test(void)" (?main_test@@YAHXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol avio_closep referenced in function "void __cdecl finish_encoding(void)" (?finish_encoding@@YAXXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol av_register_all referenced in function "int __cdecl main_test(void)" (?main_test@@YAHXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol avformat_free_context referenced in function "void __cdecl finish_encoding(void)" (?finish_encoding@@YAXXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol avformat_new_stream referenced in function "void __cdecl add_stream(struct OutputStream *,struct AVFormatContext *,struct AVCodec * *,enum AVCodecID,int,int)" (?add_stream@@YAXPEAUOutputStream@@PEAUAVFormatContext@@PEAPEAUAVCodec@@W4AVCodecID@@HH@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol avformat_alloc_output_context2 referenced in function "int __cdecl main_test(void)" (?main_test@@YAHXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol avformat_write_header referenced in function "int __cdecl main_test(void)" (?main_test@@YAHXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol av_interleaved_write_frame referenced in function "int __cdecl write_frame(struct AVFormatContext *,struct AVRational const *,struct AVStream *,struct AVPacket *)" (?write_frame@@YAHPEAUAVFormatContext@@PEBUAVRational@@PEAUAVStream@@PEAUAVPacket@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol av_write_trailer referenced in function "void __cdecl finish_encoding(void)" (?finish_encoding@@YAXXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol av_dump_format referenced in function "int __cdecl main_test(void)" (?main_test@@YAHXZ)
+VideoMux.obj : error LNK2019: unresolved external symbol sws_freeContext referenced in function "void __cdecl close_stream(struct AVFormatContext *,struct OutputStream *)" (?close_stream@@YAXPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol sws_getContext referenced in function "struct AVFrame * __cdecl get_video_frame(struct OutputStream *)" (?get_video_frame@@YAPEAUAVFrame@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol sws_scale referenced in function "void __cdecl frame_yuv_from_rgb(unsigned char *)" (?frame_yuv_from_rgb@@YAXPEAE@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol sws_getCachedContext referenced in function "void __cdecl frame_yuv_from_rgb(unsigned char *)" (?frame_yuv_from_rgb@@YAXPEAE@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol swr_alloc referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol swr_init referenced in function "void __cdecl open_audio(struct AVFormatContext *,struct AVCodec *,struct OutputStream *,struct AVDictionary *)" (?open_audio@@YAXPEAUAVFormatContext@@PEAUAVCodec@@PEAUOutputStream@@PEAUAVDictionary@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol swr_free referenced in function "void __cdecl close_stream(struct AVFormatContext *,struct OutputStream *)" (?close_stream@@YAXPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol swr_convert referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+VideoMux.obj : error LNK2019: unresolved external symbol swr_get_delay referenced in function "int __cdecl write_audio_frame(struct AVFormatContext *,struct OutputStream *)" (?write_audio_frame@@YAHPEAUAVFormatContext@@PEAUOutputStream@@@Z)
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework1\Template\Template\lib\freeglut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework1\Template\x64\Debug\Template.exe : fatal error LNK1120: 110 unresolved externals

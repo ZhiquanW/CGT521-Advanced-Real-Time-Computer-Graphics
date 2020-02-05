@@ -1,0 +1,4 @@
+﻿  Surf.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework1\Template\Template\Surf.cpp(9,49): warning C4305:  'initializing': truncation from '__int64' to 'GLuint'
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework1\Template\Template\Surf.cpp(9,37): warning C4309:  'initializing': truncation of constant value
+  Template.vcxproj -> C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework1\Template\Debug\Template.exe
