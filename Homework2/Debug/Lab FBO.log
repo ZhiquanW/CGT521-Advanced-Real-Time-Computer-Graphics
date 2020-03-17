@@ -1,0 +1,4 @@
+﻿  Lab FBO.cpp
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework2\Lab FBO.cpp(269,32): warning C4244:  '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework2\Lab FBO.cpp(269,32): warning C4244: GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  Lab FBO.vcxproj -> C:\Users\wzqzh\Documents\Git-Repository\CGT521-Advanced-Real-Time-Computer-Graphics\Homework2\Debug\Lab FBO.exe
