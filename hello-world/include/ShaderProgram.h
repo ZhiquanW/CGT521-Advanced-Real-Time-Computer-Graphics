@@ -37,7 +37,9 @@ public:
     bool set_uniform_mat4fv(GLuint, glm::mat4 &, bool= false);
     bool set_uniform_vec3(GLuint,glm::vec3 &,bool = false);
     bool set_uniform_float(GLuint,GLfloat &,bool=false);
-};
+    bool set_uniform_bool(GLuint loc,bool &,bool=false);
+
+    };
 
 
 #endif //HELLO_WORLD_A_H

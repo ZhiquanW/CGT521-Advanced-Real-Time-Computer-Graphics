@@ -107,15 +107,21 @@ void ZWEngine::render_ui() {
 
     ImGui::SliderFloat("obj angle: ", &obj_angle, -180.0f, 180.0f);
     ImGui::SliderFloat2("camera angle", &this->main_camera.get_pitch_yaw()[0], -180, 180);
-    ImGui::SliderFloat("Ka: ",&Ka,0,1);
-    ImGui::SliderFloat("Kd: ",&Kd,0,1);
-    ImGui::SliderFloat("Ks: ",&Ks,0,1);
+    ImGui::SliderFloat3("Ka: ",&(*Ka)[0],0,1);
+    ImGui::SliderFloat3("Kd: ",&(*Kd)[0],0,1);
+    ImGui::SliderFloat3("Ks: ",&(*Ks)[0],0,1);
     ImGui::SliderFloat3("La: ", &(*La)[0],0,1);
     ImGui::SliderFloat3("Ld: ", &(*Ld)[0],0,1);
     ImGui::SliderFloat3("Ls: ", &(*Ls)[0],0,1);
-//    ImGui::SliderFloat3("F0: ", &(*F0)[0],0,1);
-    ImGui::ColorEdit3("F0: ",&(*F0)[0]);
+    ImGui::SliderFloat3("F0: ",&(*F0)[0],0,1);
     ImGui::SliderFloat("m: ",&m,0,1);
+    ImGui::SliderFloat3("light pos: ",&(*(light_pos_ptr))[0],-2,2);
+    ImGui::Checkbox("ambient: ", (bool*)(ambient_effect));
+    ImGui::Checkbox("diffuse_effect: ",(bool*)(diffuse_effect));
+    ImGui::Checkbox("F_effect: ",(bool*)(F_effect));
+    ImGui::Checkbox("D_effect: ",(bool*)(D_effect));
+    ImGui::Checkbox("G_effect: ",(bool*)(G_effect));
+
     ImGui::End();
     ImGui::Render();
 }
@@ -137,7 +143,6 @@ void ZWEngine::render_world() {
         this->uniform_failed_id = 4;
     }
 //scene parameter
-    std::shared_ptr<glm::vec3 > light_color_ptr = std::make_shared<glm::vec3>(1.0f,1.0f,1.0f);
     if(!shader_program->set_uniform_vec3(5,(glm::vec3 &)*light_color_ptr)){
         this->uniform_failed_id = 5;
     }
@@ -167,29 +172,36 @@ void ZWEngine::render_world() {
 //    if(!shader_program->set_uniform_float(11,ao)) {
 //        this->uniform_failed_id = 11;
 //    }
-    glm::vec3 light_pos(0.0f,0.0f,2.0f);
-    if(!shader_program->set_uniform_vec3(8, light_pos)){
+//    glm::vec3 light_pos(0.0f,0.0f,2.0f);
+    if(!shader_program->set_uniform_vec3(8, (glm::vec3 &)*light_pos_ptr)){
         this->uniform_failed_id = 8;
     }
-    if(!shader_program->set_uniform_float(9,Ka)){
+//    std::cout << Ka->x << std::endl;
+//    glm::vec3 tmp_Ka = (*Ka)/255.0f;
+//    glm::vec3 tmp_Kd = *Kd/255.0f;
+//    glm::vec3 tmp_Ks = *Ks/255.0f;
+//    glm::vec3 tmp_La = *La/255.0f;
+//    glm::vec3 tmp_Ld = *Ld/255.0f;
+//    glm::vec3 tmp_Ls = *Ls/255.0f;
+    if(!shader_program->set_uniform_vec3(9,*Ka)) {
         this->uniform_failed_id = 9;
     }
-    if(!shader_program->set_uniform_float(10,Kd)){
+    if(!shader_program->set_uniform_vec3(10,*Kd)) {
         this->uniform_failed_id = 10;
     }
-    if(!shader_program->set_uniform_float(11,Ks)){
+    if(!shader_program->set_uniform_vec3(11,*Ks)) {
         this->uniform_failed_id = 11;
     }
-    if(!shader_program->set_uniform_vec3(12,*this->La)) {
+    if(!shader_program->set_uniform_vec3(12,*La)) {
         this->uniform_failed_id = 12;
     }
-    if(!shader_program->set_uniform_vec3(13,*this->Ld)) {
+    if(!shader_program->set_uniform_vec3(13,*Ld)) {
         this->uniform_failed_id = 13;
     }
-    if(!shader_program->set_uniform_vec3(14,*this->Ls)) {
+    if(!shader_program->set_uniform_vec3(14,*Ls)) {
         this->uniform_failed_id = 14;
     }
-    glm::vec3 F0_normalized = *this->F0/255.0f;
+    glm::vec3 F0_normalized = *this->F0;
 //    std::cout << F0->x << std::endl;
     if(!shader_program->set_uniform_vec3(15,F0_normalized)) {
         this->uniform_failed_id = 15;
@@ -197,8 +209,19 @@ void ZWEngine::render_world() {
     if(!shader_program->set_uniform_float(16,m)) {
         this->uniform_failed_id = 16;
     }
+    if(!shader_program->set_uniform_bool(17,  *ambient_effect)) {
+        this->uniform_failed_id = 17;
+    }
 
-
+    if(!shader_program->set_uniform_bool(18,*diffuse_effect)) {
+        this->uniform_failed_id = 18;
+    }if(!shader_program->set_uniform_bool(19,*F_effect)) {
+        this->uniform_failed_id = 19;
+    }if(!shader_program->set_uniform_bool(20,*D_effect)) {
+        this->uniform_failed_id = 20;
+    }if(!shader_program->set_uniform_bool(21,*G_effect)) {
+        this->uniform_failed_id = 21;
+    }
 //    this->activate_texture();
     this->activate_vao("tmp_vao");
     glDrawArrays(GL_TRIANGLES, 0,36);

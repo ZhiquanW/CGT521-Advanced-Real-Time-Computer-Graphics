@@ -10,7 +10,7 @@ out vec3 v_world_normal;
 void main() {
     gl_Position =  project * view  * model * vec4(cube_pos.xyz, 1.0);
     v_world_pos = vec3(model * vec4(cube_pos,1.0f));
-    v_world_normal = vec3(model* vec4(cube_normal,0.0f));
+    v_world_normal = vec3(model * vec4(cube_normal,0.0f));
 //    v_world_normal = vec3(model*vec4(cube_normal, 0.0f));
     //    gl_Position = vec4(aPos.xyz, 1.0);
 //    oCol = aCol;

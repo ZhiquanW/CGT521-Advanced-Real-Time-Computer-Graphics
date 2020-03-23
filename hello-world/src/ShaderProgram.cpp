@@ -107,5 +107,11 @@ bool ShaderProgram::set_uniform_float(GLuint loc,GLfloat & v,bool reuse){
     }
     glUniform1f(loc,v);
     return true;
-
+}
+bool ShaderProgram::set_uniform_bool(GLuint loc,bool & v,bool reuse){
+    if(!this->check_uniform_loc(loc) && reuse){
+        return false;
+    }
+    glUniform1i(loc,v);
+    return true;
 }
