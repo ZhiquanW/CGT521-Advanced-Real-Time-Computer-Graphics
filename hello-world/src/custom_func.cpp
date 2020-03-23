@@ -18,41 +18,59 @@ void ZWEngine::set_render_info() {
     // Set Render
     self = this;
     Camera main_cam;
-    main_camera.set_pos(glm::vec3(0, 0, 6));
+    main_camera.set_pos(glm::vec3(0, 2, 6));
     this->attach_camera(main_camera);
     glfwSetFramebufferSizeCallback(this->window, framebuffer_size_callback);
     shader_program->use_shader_program();
 
-    std::vector<GLfloat> vertices = {-1.0f, -1.0f, -1.0f,
-                                     -1.0f, -1.0f, 1.0f,
-                                     -1.0f, 1.0f, -1.0f,
-                                     -1.0f, 1.0f, 1.0f,
-                                     1.0f, -1.0f, -1.0f,
-                                     1.0f, -1.0f, 1.0f,
-                                     1.0f, 1.0f, -1.0f,
-                                     1.0f, 1.0f, 1.0f,};
-    std::vector<GLuint> indices = {
-            0, 2, 1,
-            0, 4, 1,
-            0, 2, 4,
-            3, 7, 1,
-            3, 1, 2,
-            3, 2, 7,
-            6, 2, 7,
-            6, 4, 7,
-            6, 2, 4,
-            5, 1, 7,
-            5, 4, 7,
-            5, 1, 4,
-    };
+    std::vector<GLfloat> vertices = {-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+                                     0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+                                     0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+                                     0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+                                     -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+                                     -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+
+                                     -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+                                     0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+                                     0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+                                     0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+                                     -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+                                     -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+
+                                     -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+                                     -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+                                     -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+                                     -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+                                     -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+                                     -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+
+                                     0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+                                     0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+                                     0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+                                     0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+                                     0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+                                     0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+
+                                     -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+                                     0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+                                     0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+                                     0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+                                     -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+                                     -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+
+                                     -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
+                                     0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
+                                     0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+                                     0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+                                     -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+                                     -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f};
 
     VertexArrayObject cube_vao(true);
     VertexBufferObject cube_vbo(vertices, GL_STATIC_DRAW);
-    ElementBufferObject cube_ebo(indices, GL_STATIC_DRAW);
     //pos
-    bind_vertex_attribute(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (void *) nullptr);
+    bind_vertex_attribute(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (void *) nullptr);
+    bind_vertex_attribute(1,3,GL_FLOAT,GL_FALSE,6 * sizeof(GLfloat), (void *) (3 * sizeof(GLfloat)));
     cube_vao.attach_vbo(cube_vbo.id());
-    cube_vao.attach_ebo(cube_ebo.id());
     this->add_vao("tmp_vao", cube_vao);
     ZWEngine::disable_vao();
     // light vao
@@ -89,6 +107,15 @@ void ZWEngine::render_ui() {
 
     ImGui::SliderFloat("obj angle: ", &obj_angle, -180.0f, 180.0f);
     ImGui::SliderFloat2("camera angle", &this->main_camera.get_pitch_yaw()[0], -180, 180);
+    ImGui::SliderFloat("Ka: ",&Ka,0,1);
+    ImGui::SliderFloat("Kd: ",&Kd,0,1);
+    ImGui::SliderFloat("Ks: ",&Ks,0,1);
+    ImGui::SliderFloat3("La: ", &(*La)[0],0,1);
+    ImGui::SliderFloat3("Ld: ", &(*Ld)[0],0,1);
+    ImGui::SliderFloat3("Ls: ", &(*Ls)[0],0,1);
+//    ImGui::SliderFloat3("F0: ", &(*F0)[0],0,1);
+    ImGui::ColorEdit3("F0: ",&(*F0)[0]);
+    ImGui::SliderFloat("m: ",&m,0,1);
     ImGui::End();
     ImGui::Render();
 }
@@ -114,13 +141,67 @@ void ZWEngine::render_world() {
     if(!shader_program->set_uniform_vec3(5,(glm::vec3 &)*light_color_ptr)){
         this->uniform_failed_id = 5;
     }
-    std::shared_ptr<glm::vec3 > obj_color_ptr = std::make_shared<glm::vec3>(1.0f,0.5f,0.31f);
+    std::shared_ptr<glm::vec3 > obj_color_ptr = std::make_shared<glm::vec3>(1.0f,1.0f,1.0f);
     if(!shader_program->set_uniform_vec3(6, (glm::vec3 &)*obj_color_ptr)){
         this->uniform_failed_id = 6;
     }
+    glm::vec3 eye_pos = this->main_camera.get_pos();
+    if(!shader_program->set_uniform_vec3(7,eye_pos)){
+        this->uniform_failed_id = 7;
+    }
+
+    // material parameters
+//    glm::vec3  albedo(0.4,0.2,0.1);
+//    if(!shader_program->set_uniform_vec3(8,albedo)){
+//        this->uniform_failed_id = 8;
+//    }
+//    GLfloat metallic = 0.1f;
+//    if(!shader_program->set_uniform_float(9,metallic)) {
+//        this->uniform_failed_id = 9;
+//    }
+//    GLfloat roughness = 0.8f;
+//    if(!shader_program->set_uniform_float(10,roughness)) {
+//        this->uniform_failed_id = 10;
+//    }
+//    GLfloat ao = 0.2f;
+//    if(!shader_program->set_uniform_float(11,ao)) {
+//        this->uniform_failed_id = 11;
+//    }
+    glm::vec3 light_pos(0.0f,0.0f,2.0f);
+    if(!shader_program->set_uniform_vec3(8, light_pos)){
+        this->uniform_failed_id = 8;
+    }
+    if(!shader_program->set_uniform_float(9,Ka)){
+        this->uniform_failed_id = 9;
+    }
+    if(!shader_program->set_uniform_float(10,Kd)){
+        this->uniform_failed_id = 10;
+    }
+    if(!shader_program->set_uniform_float(11,Ks)){
+        this->uniform_failed_id = 11;
+    }
+    if(!shader_program->set_uniform_vec3(12,*this->La)) {
+        this->uniform_failed_id = 12;
+    }
+    if(!shader_program->set_uniform_vec3(13,*this->Ld)) {
+        this->uniform_failed_id = 13;
+    }
+    if(!shader_program->set_uniform_vec3(14,*this->Ls)) {
+        this->uniform_failed_id = 14;
+    }
+    glm::vec3 F0_normalized = *this->F0/255.0f;
+//    std::cout << F0->x << std::endl;
+    if(!shader_program->set_uniform_vec3(15,F0_normalized)) {
+        this->uniform_failed_id = 15;
+    }
+    if(!shader_program->set_uniform_float(16,m)) {
+        this->uniform_failed_id = 16;
+    }
+
+
 //    this->activate_texture();
     this->activate_vao("tmp_vao");
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+    glDrawArrays(GL_TRIANGLES, 0,36);
     glBindVertexArray(0);
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 

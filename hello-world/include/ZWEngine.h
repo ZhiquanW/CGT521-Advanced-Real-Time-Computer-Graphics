@@ -65,9 +65,14 @@ private:
     // custom varibles
     GLuint uniform_failed_id = -1;
     GLfloat obj_angle = 0.0f;
-
-
-
+    GLfloat Ka = 0.5f;
+    GLfloat Kd = 0.5f;
+    GLfloat Ks = 0.5f;
+    std::shared_ptr<glm::vec3>  La = std::make_shared<glm::vec3>(1.0f);
+    std::shared_ptr<glm::vec3>  Ld = std::make_shared<glm::vec3>(1.0f);
+    std::shared_ptr<glm::vec3>  Ls = std::make_shared<glm::vec3>(1.0f);
+    std::shared_ptr<glm::vec3> F0 = std::make_shared<glm::vec3>(0.56,0.57,0.58);
+    GLfloat m = 0.5f;
     //functions
     bool init_window(int, int);
 

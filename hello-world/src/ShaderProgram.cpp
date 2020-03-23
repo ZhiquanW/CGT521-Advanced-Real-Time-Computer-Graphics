@@ -100,3 +100,12 @@ bool ShaderProgram::set_uniform_vec3(GLuint loc,  glm::vec3 & v, bool reuse) {
     glUniform3fv(loc,1,glm::value_ptr(v));
     return true;
 }
+
+bool ShaderProgram::set_uniform_float(GLuint loc,GLfloat & v,bool reuse){
+    if(!this->check_uniform_loc(loc) && reuse){
+        return false;
+    }
+    glUniform1f(loc,v);
+    return true;
+
+}

@@ -15,7 +15,7 @@ const GLchar *fs_shader_path = "../glsl/fragment_shader.glsl";
 
 int main() {
     auto *tmp_app = new ZWEngine();
-    std::cout << tmp_app->toy_color->y << std::endl;
+//    std::cout << tmp_app->toy_color->y << std::endl;
     if (!tmp_app->init_engine(SCR_WIDTH, SCR_HEIGHT)) {
         std::cout << "engine failed to initialize" << std::endl;
     } else {
