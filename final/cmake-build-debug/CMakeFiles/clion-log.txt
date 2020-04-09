@@ -1,0 +1,4 @@
+/home/zhiquan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zhiquan/Git-Repositories/CGT521-Advanced-Real-Time-Computer-Graphics/final
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhiquan/Git-Repositories/CGT521-Advanced-Real-Time-Computer-Graphics/final/cmake-build-debug
